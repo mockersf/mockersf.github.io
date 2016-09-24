@@ -1,0 +1,39 @@
+# Site settings
+title: Domanojn
+description: 'François Mockers'
+url: 'http://mockersf.github.io/'
+baseurl: '/'
+google_analytics: 'UA-84705806-1'
+# disqus_shortname: 'your-disqus-name'
+
+author:
+  name: 'François Mockers'
+  email: mockersf@gmail.com
+  twitter_username: FrancoisMockers
+  facebook_username: francois.mockers
+  github_username: mockersf
+  linkedin_username: francois-mockers
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+gems: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
