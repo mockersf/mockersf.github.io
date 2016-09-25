@@ -56,7 +56,7 @@ After a few updates on our framework, as it didn't handle multipart queries and 
 
 Improvements to the mp3 check can be made, for example by cutting the mp3s to compare before the device name, as this can vary, or by using a speech to text engine and compare text.
 
-I added a [GitHub repo][alexa-behave-test] with the behave steps to send commands to Alexa and check the response
+I added a [GitHub repo][alexa-behave-test] with the behave steps to send commands to Alexa and check the response:
 
 ```
  Feature: Alexa Smart Home Skill integration # features/alexa.feature:1
