@@ -1,6 +1,5 @@
 ---
 title:  "Testing Alexa"
-date:   2016-09-24 06:00:00
 categories: [testing]
 tags: [tests, alexa]
 ---
