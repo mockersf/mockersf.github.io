@@ -2,7 +2,7 @@
 title: Testing and Stuff
 description: 'My thoughts and experiments'
 url: 'http://mockersf.github.io/'
-baseurl: '/'
+baseurl: 'http://mockersf.github.io/'
 google_analytics: 'UA-84705806-1'
 # disqus_shortname: 'your-disqus-name'
 
