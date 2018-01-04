@@ -92,6 +92,18 @@
 
         </div>
 
+        <hr class="panel-cover__divider panel-cover__divider--secondary">
+
+        <div class="panel-cover__description">
+          <div style="display: flex; flex-direction: row-reverse; flex-wrap: wrap-reverse; justify-content: space-between">
+            {% for tagitem in site.tags %} 
+              <div id="{{ tagitem[0] }}" style="padding: 1; order: {{ site.posts | where_exp:"item","item.tags contains tagitem[0]" | size }};">
+                <img src="{{ "images/tags/" | append: tagitem[0] | append: ".png" | prepend: site.baseurl}}" style="width: 30px; height: 30px;" />
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+
       </div>
 
     </div>
