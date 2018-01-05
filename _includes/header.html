@@ -1,6 +1,6 @@
 <span class="mobile btn-mobile-menu">
-  <i class="icon icon-list btn-mobile-menu__icon"></i>
-  <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+  <i class="icon fa fa-bars btn-mobile-menu__icon"></i>
+  <i class="icon fa fa-times-circle btn-mobile-close__icon hidden"></i>
 </span>
 
 <header class="panel-cover" style="background-image: url({{ "images/cover.jpg" | prepend: site.baseurl }})">
@@ -33,7 +33,7 @@
               <!-- Twitter -->
               <li class="navigation__item">
                 <a href="http://twitter.com/{{ site.author.twitter_username }}" title="@{{ site.author.twitter_username }} on Twitter" target="_blank">
-                  <i class="icon icon-social-twitter"></i>
+                  <i class="icon fa fa-twitter-square" aria-hidden="true"></i>
                   <span class="label">Twitter</span>
                 </a>
               </li>
@@ -43,7 +43,6 @@
               <!-- Facebook -->
               <li class="navigation__item">
                 <a href="http://fb.me/{{ site.author.facebook_username }}" title="{{ site.author.facebook_username }} on Facebook" target="_blank">
-                  <i class="icon icon-social-facebook"></i>
                   <span class="label">Facebook</span>
                 </a>
               </li>
@@ -53,7 +52,7 @@
               <!-- LinkedIn -->
               <li class="navigation__item">
                 <a href="https://www.linkedin.com/in/{{ site.author.linkedin_username }}" title="{{ site.author.linkedin_username }} on LinkedIn" target="_blank">
-                  <i class="icon icon-social-linkedin"></i>
+                  <i class="icon fa fa-linkedin-square" aria-hidden="true"></i>
                   <span class="label">LinkedIn</span>
                 </a>
               </li>
@@ -63,7 +62,7 @@
               <!-- GitHub -->
               <li class="navigation__item">
                 <a href="https://www.github.com/{{ site.author.github_username }}" title="{{ site.author.github_username }} on GitHub" target="_blank">
-                  <i class="icon icon-social-github"></i>
+                  <i class="icon fa fa-github-square" aria-hidden="true"></i>
                   <span class="label">GitHub</span>
                 </a>
               </li>
@@ -73,7 +72,7 @@
               <!-- Email -->
               <li class="navigation__item">
                 <a href="mailto:{{ site.author.email }}" title="Email {{ site.author.email }}" target="_blank">
-                  <i class="icon icon-mail"></i>
+                  <i class="icon fa fa-envelope" aria-hidden="true"></i>
                   <span class="label">Email</span>
                 </a>
               </li>
@@ -82,7 +81,7 @@
             <!-- RSS -->
             <li class="navigation__item">
               <a href="{{ "feed.xml" | prepend: site.baseurl }}" title="Subscribe" target="_blank">
-                <i class="icon icon-rss"></i>
+                <i class="icon fa fa-rss-square" aria-hidden="true"></i>
                 <span class="label">RSS</span>
               </a>
             </li>
@@ -92,7 +91,7 @@
 
         </div>
 
-        <hr class="panel-cover__divider panel-cover__divider--secondary">
+        <hr class="panel-cover__divider">
 
         <div class="panel-cover__description">
           <div style="display: flex; flex-direction: row-reverse; flex-wrap: wrap-reverse; justify-content: space-between">
