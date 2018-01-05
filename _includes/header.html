@@ -40,26 +40,6 @@
               </li>
             {% endif %}
 
-            {% if site.author.facebook_username %}
-              <!-- Facebook -->
-              <li class="navigation__item">
-                <a href="http://fb.me/{{ site.author.facebook_username }}" title="{{ site.author.facebook_username }} on Facebook" target="_blank">
-                  <i class="icon fa fa-facebook-square" aria-hidden="true"></i>
-                  <span class="label">Facebook</span>
-                </a>
-              </li>
-            {% endif %}
-
-            {% if site.author.linkedin_username %}
-              <!-- LinkedIn -->
-              <li class="navigation__item">
-                <a href="https://www.linkedin.com/in/{{ site.author.linkedin_username }}" title="{{ site.author.linkedin_username }} on LinkedIn" target="_blank">
-                  <i class="icon fa fa-linkedin-square" aria-hidden="true"></i>
-                  <span class="label">LinkedIn</span>
-                </a>
-              </li>
-            {% endif %}
-
             {% if site.author.github_username %}
               <!-- GitHub -->
               <li class="navigation__item">
@@ -79,14 +59,6 @@
                 </a>
               </li>
             {% endif %}
-
-            <!-- RSS -->
-            <li class="navigation__item">
-              <a href="{{ "feed.xml" | prepend: site.baseurl }}" title="Subscribe" target="_blank">
-                <i class="icon fa fa-rss-square" aria-hidden="true"></i>
-                <span class="label">RSS</span>
-              </a>
-            </li>
 
             </ul>
           </nav>
