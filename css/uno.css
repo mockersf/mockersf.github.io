@@ -442,9 +442,6 @@ hr {
 	background: none; }
 
 .btn, .navigation__item a {
-	padding: 10px 20px;
-	border: 1px solid #e25440;
-	border-radius: 20px;
 	font-size: .9em;
 	font-weight: bold;
 	letter-spacing: 1px;
@@ -531,7 +528,7 @@ nav {
 			display: none; }
 		.navigation--social a .icon {
 			display: block;
-			font-size: 1.7em; }
+			font-size: 1.4em; }
 
 .pagination {
 	display: block;
@@ -805,18 +802,17 @@ input[type="tel"] {
 		display: block;
 		margin-bottom: .4em; } }
 
-.tag-img {
-	width: 25px;
-	height: 25px;
-}
-
-.tag-text {
-	word-wrap: break-word;
-	width: 25px;
-	height: 25px;
-}
-
 .tag-cloud {
 	margin: 1px;
 
+}
+.tag-cloud-img {
+	width: 25px;
+	height: 25px;
+}
+
+.tag-img {
+	width: 40px;
+	height: 40px;
+	float: left;
 }
