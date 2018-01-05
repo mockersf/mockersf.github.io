@@ -1,6 +1,6 @@
 # Site settings
 title: Testing and Stuff
-description: 'My thoughts and experiments'
+description: 'thoughts and experiments'
 url: 'https://mockersf.github.io/'
 baseurl: 'https://mockersf.github.io/'
 google_analytics: 'UA-84705806-1'
