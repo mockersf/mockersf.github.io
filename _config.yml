@@ -4,7 +4,7 @@ description: 'My thoughts and experiments'
 url: 'https://mockersf.github.io/'
 baseurl: 'https://mockersf.github.io/'
 google_analytics: 'UA-84705806-1'
-# disqus_shortname: 'your-disqus-name'
+disqus_shortname: 'mockersf'
 
 author:
   name: 'François Mockers'

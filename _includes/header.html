@@ -97,8 +97,16 @@
         <div class="panel-cover__description">
           <div style="display: flex; flex-direction: row-reverse; flex-wrap: wrap-reverse; justify-content: space-between">
             {% for tagitem in site.tags %} 
-              <div id="{{ tagitem[0] }}" style="padding: 1; order: {{ site.posts | where_exp:"item","item.tags contains tagitem[0]" | size }};">
-                <img src="{{ "images/tags/" | append: tagitem[0] | append: ".png" | prepend: site.baseurl}}" style="width: 30px; height: 30px;" />
+              {% assign nb_posts = site.posts | where_exp:"item","item.tags contains tagitem[0]" | size %}
+              <div id="{{ tagitem[0] }}" style="order: {{ nb_posts }};" class="tag-cloud">
+                {% capture tag_img %}{% file_exists images/tags/{{ tagitem[0] }}.png %}{% endcapture %}
+                {% if tag_img == "true" %}
+                  <img src="{{ "images/tags/" | append: tagitem[0] | append: ".png" | prepend: site.baseurl}}" class="tag-img" title="{{ nb_posts }} post(s)" />
+                {% else %}
+                  <div class="tag-text">
+                      {{ tagitem[0] }}
+                  </div>
+                {% endif %}
               </div>
             {% endfor %}
           </div>

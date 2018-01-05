@@ -2,6 +2,7 @@
 title:  "Testing Alexa Skills"
 categories: [testing]
 tags: [tests, alexa]
+comments: true
 ---
 If you want to test Alexa features without owning an Echo, there are several possibilities:
 

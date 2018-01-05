@@ -1675,3 +1675,19 @@ input[type="tel"] {
 	.btn, .navigation__item a {
 		display: block;
 		margin-bottom: .4em; } }
+
+.tag-img {
+	width: 25px;
+	height: 25px;
+}
+
+.tag-text {
+	word-wrap: break-word;
+	width: 25px;
+	height: 25px;
+}
+
+.tag-cloud {
+	margin: 1px;
+
+}
