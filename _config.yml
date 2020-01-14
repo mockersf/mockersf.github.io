@@ -1,24 +1,23 @@
 # Site settings
 title: Testing and Stuff
-description: 'thoughts and experiments'
-url: 'https://mockersf.github.io/'
-baseurl: 'https://mockersf.github.io/'
-google_analytics: 'UA-84705806-1'
-disqus_shortname: 'mockersf'
+description: "thoughts and experiments"
+url: "https://mockersf.github.io/"
+baseurl: "https://mockersf.github.io/"
+google_analytics: "UA-84705806-1"
+disqus_shortname: "mockersf"
 
 author:
-  name: 'François Mockers'
+  name: "François Mockers"
   email: mockersf@gmail.com
   twitter_username: FrancoisMockers
   github_username: mockersf
 
 defaults:
-  -
-    scope:
-      path: ''
-      type: 'posts'
+  - scope:
+      path: ""
+      type: "posts"
     values:
-        layout: 'post'
+      layout: "post"
 
 # Build settings
 destination: _site
@@ -33,5 +32,5 @@ kramdown:
   # do not replace newlines by <br>s
   hard_wrap: false
 
-plugins: ['jekyll-paginate']
-exclude: ['README.md', 'Gemfile', 'Gemfile.lock']
+plugins: ["jekyll-paginate"]
+exclude: ["README.md", "Gemfile", "Gemfile.lock"]
