@@ -3,18 +3,16 @@
   <i class="icon fa fa-times-circle btn-mobile-close__icon hidden"></i>
 </span>
 
-<header class="panel-cover" style="background-image: url({{ "images/cover.jpg" | prepend: site.baseurl }})">
+<header class="panel-cover" style="background-image: url({{ "images/cover.jpg" | relative_url }})">
   <div class="panel-main">
 
     <div class="panel-main__inner panel-inverted">
       <div class="panel-main__content">
-        <a href="{{ site.baseurl }}" title="{{ site.title }}">
+        <a href="{{ site.url }}" title="{{ site.title }}">
           <h1 class="panel-cover__title panel-title">{{ site.title }}</h1>
         </a>
         <hr class="panel-cover__divider">
-        <a href="{{ site.baseurl }}#about" title="link to {{ site.title }} about" class="about-button">
-          <p class="panel-cover__description">{{ site.description }}</p>
-        </a>
+        <p class="panel-cover__description">{{ site.description }}</p>
         <hr class="panel-cover__divider panel-cover__divider--secondary">
 
         <div class="navigation-wrapper">
@@ -77,8 +75,8 @@
             {% for tagitem in site.tags %}
             {% assign nb_posts = site.posts | where_exp:"item","item.tags contains tagitem[0]" | size %}
             <div style="order: {{ nb_posts }};" class="tag-cloud">
-              <a href="{{ site.baseurl }}tags/#{{ tagitem[0] }}" title="{{ tagitem[0] }}">
-                <img src="{{ "images/tags/" | append: tagitem[0] | append: ".png" | prepend: site.baseurl}}"
+              <a href="{{ tag | prepend: 'tags/#' | relative_url }}" title="{{ tagitem[0] }}">
+                <img src="{{ "images/tags/" | append: tagitem[0] | append: ".png" | relative_url}}"
                   class="tag-cloud-img" title="{{ tagitem[0] }} - {{ nb_posts }} post(s)" />
               </a>
             </div>

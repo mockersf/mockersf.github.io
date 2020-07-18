@@ -7,7 +7,7 @@ layout: default
       <time datetime="{{ page.date | date: "%-d %b %Y" }}"
         class="post-meta__date date">{{ page.date | date: "%-d %b %Y" }}</time> &#8226;
       <span class="post-meta__categories">in {% for category in page.categories %}
-        <a href="{{ site.baseurl }}categories/#{{ category }}">{{ category }}</a> {% endfor %}
+        <a href="{{ category | prepend: 'categories/#' | relative_url }}">{{ category }}</a> {% endfor %}
       </span> &#8226;
       {% include read_time.html content=content %}
     </div>
@@ -20,7 +20,7 @@ layout: default
     {{ content }}
   </section>
   <span class="post-meta__tags">tags: {% for tag in page.tags %}<a
-      href="{{ site.baseurl }}tags/#{{ tag }}">{{ tag }}</a> {% endfor %}</span>
+      href="{{ tag | prepend: 'tags/#' | relative_url }}">{{ tag }}</a> {% endfor %}</span>
   {% if page.comments != false and site.disqus_shortname %}<section id="disqus_thread"></section>
   <!-- /#disqus_thread -->{% endif %}
 </article>

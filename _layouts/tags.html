@@ -12,7 +12,7 @@ layout: default
 {% for tagitem in sorted_tags %}
 <div id="{{ tagitem[0] }}">
   <div>
-    <img src="{{ "images/tags/" | append: tagitem[0] | append: ".png" | prepend: site.baseurl}}" class="tag-img"
+    <img src="{{ "images/tags/" | append: tagitem[0] | append: ".png" | relative_url}}" class="tag-img"
       title="{{ tagitem[0] }} - {{ nb_posts }} post(s)" />
     <h3 style="margin-left: 50px; padding-top: 6px;"> {{ tagitem[0] }} </h3>
   </div>
@@ -20,7 +20,7 @@ layout: default
     {% for post in site.posts %}
     {% if post.tags contains tagitem[0] %}
     <li>
-      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
     </li>
     {% endif %}
     {% endfor %}
