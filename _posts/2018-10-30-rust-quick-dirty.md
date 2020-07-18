@@ -1,8 +1,7 @@
 ---
 title:  "Rust - Quick and Dirty"
-categories: [development]
+categories: [rust]
 tags: [rust]
-comments: true
 ---
 Rust may be quite hard to get into, but there are a few tricks to write ugly code that may speed you up.
 

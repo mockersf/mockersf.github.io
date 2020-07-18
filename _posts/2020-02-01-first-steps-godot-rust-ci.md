@@ -1,8 +1,7 @@
 ---
 title:  "Getting started with Godot and Rust"
-categories: [development]
+categories: [game]
 tags: [rust, godot, github, clever-cloud]
-comments: true
 ---
 Making it safer and setting up CI with Github Actions
 
