@@ -2,27 +2,28 @@
 layout: default
 ---
 <h2>Tags:</h2>
-<div class="tags"> 
-{% assign sorted_tags = site.tags | sort %}
-{% for tagitem in sorted_tags  %} 
+<div class="tags">
+  {% assign sorted_tags = site.tags | sort %}
+  {% for tagitem in sorted_tags  %}
   <a href="#{{ tagitem[0] }}">{{  tagitem[0] }}</a>
-{% endfor %}
+  {% endfor %}
 </div>
 
-{% for tagitem in sorted_tags %} 
-  <div id="{{ tagitem[0] }}">
-    <div>
-      <img src="{{ "images/tags/" | append: tagitem[0] | append: ".png" | prepend: site.baseurl}}" class="tag-img" title="{{ tagitem[0] }} - {{ nb_posts }} post(s)" />
-      <h3 style="margin-left: 50px; padding-top: 6px;"> {{ tagitem[0] }} </h3>
-    </div>
-    <ul>
-      {% for post in site.posts %} 
-        {% if post.tags contains tagitem[0] %} 
-            <li>
-              <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            </li>
-        {% endif %}
-      {% endfor %}
-    </ul>
+{% for tagitem in sorted_tags %}
+<div id="{{ tagitem[0] }}">
+  <div>
+    <img src="{{ "images/tags/" | append: tagitem[0] | append: ".png" | prepend: site.baseurl}}" class="tag-img"
+      title="{{ tagitem[0] }} - {{ nb_posts }} post(s)" />
+    <h3 style="margin-left: 50px; padding-top: 6px;"> {{ tagitem[0] }} </h3>
   </div>
+  <ul>
+    {% for post in site.posts %}
+    {% if post.tags contains tagitem[0] %}
+    <li>
+      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    </li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+</div>
 {% endfor %}

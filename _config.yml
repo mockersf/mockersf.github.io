@@ -6,9 +6,10 @@ baseurl: "https://mockersf.github.io/"
 
 author:
   name: "François Mockers"
-  email: mockersf@gmail.com
+  # email: mockersf@gmail.com
   twitter_username: FrancoisMockers
   github_username: mockersf
+  linkedin_profile: françois-mockers-ba50324
 
 defaults:
   - scope:
