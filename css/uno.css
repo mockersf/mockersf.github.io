@@ -308,6 +308,10 @@ hr {
 	border: none;
 	box-shadow: none; }
 
+.post {
+	text-align: justify;
+}
+
 .post img {
 	max-width: 100%;
 	margin: 0 auto;
