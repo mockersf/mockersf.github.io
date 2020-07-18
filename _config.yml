@@ -1,8 +1,7 @@
 # Site settings
 title: Testing and Stuff
 description: "thoughts and experiments"
-url: "https://mockersf.github.io/"
-baseurl: "https://mockersf.github.io/"
+baseurl: "/"
 
 author:
   name: "François Mockers"
