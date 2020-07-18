@@ -4,7 +4,7 @@ categories: [development]
 tags: [rust, godot, github, clever-cloud]
 comments: true
 ---
-Making it safer and setting up CI
+Making it safer and setting up CI with Github Actions
 
 ## Signal binding to make Godot safer in Rust
 
@@ -93,11 +93,3 @@ Here is the [workflow](https://github.com/mockersf/Komarowii/blob/691b55033fb2e6
 * If tests and release build were successful export the game based on the [`export_presets.cfg`](https://github.com/mockersf/Komarowii/blob/1599988eb8cf41ae1b96bf7561f9f0a953fb9427/export_presets.cfg) file, using the [`firebelley/godot-export`](https://github.com/firebelley/godot-export) github action. The macOS export is a zip with a permissions error that needs to be fixed.
 * Unzip the export, fix the permissions issue and then create a dmg.
 * Finally, prepare to upload to an S3 bucket the dmg and the commit sha that was built. I used [clever cloud Cellar](https://www.clever-cloud.com/doc/addons/cellar/) which offer a S3 compatible API. Then the github page for the project with the new URL is built and deployed: [https://mockersf.github.io/Komarowii/](https://mockersf.github.io/Komarowii/)
-
-## Current status
-
-Very little has been done during this month, as setting up CI took me longer than expected...
-* A menu screen with a new game button. Adding random stars on the screen are done in Godot Script, but managing the stars (changing luminosity or removing them) is done in Rust.
-* The game itself, where one can move very basically a ship around a planet. This is currently done in Godot Script.
-
-This matches my target for January, but I hoped to do more. For february, I'll move more code to Rust, improve ship movements, and build the parser for Endless Sky data files.
