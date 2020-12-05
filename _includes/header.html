@@ -32,7 +32,7 @@
               <li class="navigation__item">
                 <a href="http://twitter.com/{{ site.author.twitter_username }}"
                   title="@{{ site.author.twitter_username }} on Twitter" target="_blank">
-                  <i class="icon fa fa-twitter-square" aria-hidden="true"></i>
+                  <i class="icon fab fa-twitter" aria-hidden="true"></i>
                   <span class="label">Twitter</span>
                 </a>
               </li>
@@ -43,7 +43,7 @@
               <li class="navigation__item">
                 <a href="https://www.github.com/{{ site.author.github_username }}"
                   title="{{ site.author.github_username }} on GitHub" target="_blank">
-                  <i class="icon fa fa-github-square" aria-hidden="true"></i>
+                  <i class="icon fab fa-github" aria-hidden="true"></i>
                   <span class="label">GitHub</span>
                 </a>
               </li>
@@ -64,8 +64,19 @@
               <li class="navigation__item">
                 <a href="https://www.linkedin.com/in/{{ site.author.linkedin_profile }}"
                   title="{{ site.author.linkedin_profile }} on LinkedIn" target="_blank">
-                  <i class="icon fa fa-linkedin-square" aria-hidden="true"></i>
-                  <span class="label">GitHub</span>
+                  <i class="icon fab fa-linkedin-in" aria-hidden="true"></i>
+                  <span class="label">LinkedIn</span>
+                </a>
+              </li>
+              {% endif %}
+
+              {% if site.author.itchio_profile %}
+              <!-- itch.io -->
+              <li class="navigation__item">
+                <a href="https://{{ site.author.itchio_profile   }}.itch.io/"
+                  title="{{ site.author.itchio_profile }} on itch.io" target="_blank">
+                  <i class="icon fab fa-itch-io" aria-hidden="true"></i>
+                  <span class="label">itch.io</span>
                 </a>
               </li>
               {% endif %}
