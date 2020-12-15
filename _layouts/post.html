@@ -4,15 +4,16 @@ layout: default
 <article class="post-container post-container--single">
   <header class="post-header">
     <div class="post-meta">
-      <time datetime="{{ page.date | date: "%-d %b %Y" }}"
-        class="post-meta__date date">{{ page.date | date: "%-d %b %Y" }}</time> &#8226;
+      <time datetime="{{ page.date | date: " %-d %b %Y" }}" class="post-meta__date date">{{ page.date | date: "%-d %b
+        %Y" }}</time> &#8226;
       <span class="post-meta__categories">in {% for category in page.categories %}
         <a href="{{ category | prepend: 'categories/#' | relative_url }}">{{ category }}</a> {% endfor %}
       </span> &#8226;
       {% include read_time.html content=content %} &#8226;
       <span class="post-meta post-meta__time">
         Found a problem?
-        <a href="https://github.com/mockersf/mockersf.github.io/issues/new?title= {{ page.title }}" target="_blank">
+        <a href="https://github.com/mockersf/mockersf.github.io/issues/new?title= issue%20with%20{{ page.title }}"
+          target="_blank">
           Let me know!
         </a>
       </span>
