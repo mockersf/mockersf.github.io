@@ -16,10 +16,16 @@
           <h1 class="panel-cover__title panel-title">{{ site.title }}</h1>
         </a>
         <hr class="panel-cover__divider">
-        <div class="panel-cover__description" style="display: flex; align-items: center;">
-          <img src="{{ site.author.picture | relative_url }}" class="panel-cover__description"
-            style="width: 40px; height: 40px; margin: 0;" />
-          <p class=" panel-cover__description" style="margin: 0;">{{ site.description }}</p>
+        <div class="panel-cover__description">
+          <p class=" panel-cover__description">{{ site.description }}</p>
+        </div>
+        <hr class="panel-cover__divider panel-cover__divider--secondary">
+        <div class="panel-cover__description">
+          <a href="{{ "apropos" | relative_url }}" style="display: flex; align-items: center; justify-content: center;">
+            <img src="{{ site.author.picture | relative_url }}" class="panel-cover__description"
+              style="width: 40px; height: 40px; margin: 0;" />
+            <p class=" panel-cover__description" style="margin: 0;">About me</p>
+          </a>
         </div>
         <hr class="panel-cover__divider panel-cover__divider--secondary">
 
