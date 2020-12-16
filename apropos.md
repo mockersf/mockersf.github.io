@@ -2,7 +2,6 @@
 layout: default
 ---
 
-# About me
 
 ## Hi there 🖖
 
