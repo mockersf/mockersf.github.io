@@ -273,9 +273,16 @@ hr {
 	margin: 0 0 .4em 0;
 	color: #c7c7c7; }
 
+.post-meta__conference {
+	font-size: 0.8em;
+	margin-left: .5em;
+	margin-right: .5em;
+}
+
 .post-meta__date {
 	font-size: 0.8em;
-	margin-right: .5em; }
+	margin-right: .5em;
+}
 
 .post-meta__time {
 	font-size: 0.8em;
