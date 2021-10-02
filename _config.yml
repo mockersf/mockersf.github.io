@@ -34,3 +34,6 @@ kramdown:
 
 plugins: ["jekyll-paginate"]
 exclude: ["README.md", "Gemfile", "Gemfile.lock"]
+
+collections:
+  - presentations

@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<div class="presentations">
+  {% for presentation in site.presentations reversed %}
+  <a href="#{{ presentation.name | slugify }}"">
+    <h3 id=" {{ presentation.name | slugify }}">
+    {{ presentation.name }}
+    <span class="post-meta__language">{% if presentation.lang == "fr" %}
+      🇫🇷
+      {% elsif presentation.lang == "en" %}
+      🇬🇧
+      {% endif %}</span>
+    </h3>
+  </a>
+  <span class="post-meta">
+    <span class="post-meta__date date">{{ presentation.date | date: "%-d %b %Y" }}</span> &#8226;
+    <span class="post-meta__conference">at {{ presentation.conference }}</span>
+  </span>
+  <p>{{ presentation.content | markdownify }}</p>
+  <ul>
+    {% for file in presentation.files %}
+    <li><a href="{{ file.file }}">{{ file.name }}</a></li>
+    {% endfor %}
+  </ul>
+  {% endfor %}
+</div>
