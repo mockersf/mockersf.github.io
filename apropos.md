@@ -13,3 +13,4 @@ You can find me:
 - on itch.io at [{{ site.author.itchio_profile }}](https://{{ site.author.itchio_profile }}.itch.io/){:target="_blank"}
 - on linkedin at [{{ site.author.linkedin_profile }}](https://www.linkedin.com/in/{{ site.author.linkedin_profile }}){:target="_blank"}
 
+I sometimes give presentations, you can find them [here](/presentations/).
