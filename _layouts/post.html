@@ -28,7 +28,4 @@ layout: default
   </section>
   <span class="post-meta__tags">tags: {% for tag in page.tags %}<a
       href="{{ tag | prepend: 'tags/#' | relative_url }}">{{ tag }}</a> {% endfor %}</span>
-  {% if page.comments != false and site.disqus_shortname %}<section id="disqus_thread"></section>
-  <!-- /#disqus_thread -->{% endif %}
 </article>
-{% if page.comments != false %}{% include disqus.html %}{% endif %}
