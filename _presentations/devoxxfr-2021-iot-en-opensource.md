@@ -8,6 +8,8 @@ files:
       name: keynote
     - file: "devoxxfr-2021-iot-en-opensource/IoT open source.pdf"
       name: pdf
+    - file: "https://www.youtube.com/watch?v=zs35LcaEFMo"
+      name: youtube
 ---
 Finalement, l'IoT à la maison, c'est un peu comme une prod à gérer...
 
