@@ -4,7 +4,7 @@ layout: default
 <div class="presentations">
   {% for presentation in site.presentations reversed %}
   <a href="#{{ presentation.name | slugify }}"">
-    <h3 id=" {{ presentation.name | slugify }}">
+    <h3 id="{{ presentation.name | slugify }}">
     {{ presentation.name }}
     <span class="post-meta__language">{% if presentation.lang == "fr" %}
       🇫🇷
