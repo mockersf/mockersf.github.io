@@ -6,6 +6,8 @@ description: "thoughts and experiments"
 author:
   name: "François Mockers"
   # email: mockersf@gmail.com
+  mastodon_username: FrancoisMockers
+  mastodon_instance: hachyderm.io
   twitter_username: FrancoisMockers
   github_username: mockersf
   linkedin_profile: françois-mockers
