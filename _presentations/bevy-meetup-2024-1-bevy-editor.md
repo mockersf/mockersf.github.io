@@ -6,7 +6,7 @@ lang: en
 files:
     - file: "bevy-meetup-2024-1-bevy-editor/bevy-editor.pdf"
       name: pdf
-    - file: "https://youtu.be/i3wF71XJ-24?t=5997"
+    - file: "https://www.youtube.com/watch?v=2PvHH3qCqvg"
       name: youtube
 ---
 [Bevy](https://bevyengine.org) doesn't have an editor, but initiatives and prototypes are starting... which means it's the perfect time to look at what others are doing.

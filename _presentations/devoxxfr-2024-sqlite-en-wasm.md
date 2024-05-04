@@ -6,6 +6,8 @@ lang: fr
 files:
     - file: "devoxxfr-2024-sqlite-en-wasm/SQLite en wasm.pdf"
       name: pdf
+    - file: "https://www.youtube.com/watch?v=MnEiUAv4raY"
+      name: youtube
 ---
 SQLite est partout... de la configuration de serveurs aux applications mobiles. Depuis février 2023, SQLite est aussi disponible en Wasm, et est maintenant directement intégré dans les principaux navigateurs.
 
