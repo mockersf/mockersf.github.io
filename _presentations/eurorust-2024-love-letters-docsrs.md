@@ -1,10 +1,10 @@
 ---
-name: Augmented docs: a love letter to rustdoc and docs.rs
+name: Augmented docs - a love letter to rustdoc and docs.rs
 conference: EuroRust
 date: "2024-10-10"
 lang: en
 files:
-    - file: "devoxxfr-2024-sqlite-en-wasm/augmented-docs.pdf"
+    - file: "eurorust-2024-love-letters-docsrs/augmented-docs.pdf"
       name: pdf
 ---
 Docs are one of the superpower of Rust, thanks to the tooling and the central platform hosting them. Let’s take it to the next level!
