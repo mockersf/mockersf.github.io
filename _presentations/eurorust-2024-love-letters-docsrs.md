@@ -6,6 +6,8 @@ lang: en
 files:
     - file: "eurorust-2024-love-letters-docsrs/augmented-docs.pdf"
       name: pdf
+    - file: "https://www.youtube.com/watch?v=Uy13wS9VyNU"
+      name: youtube
 ---
 Docs are one of the superpower of Rust, thanks to the tooling and the central platform hosting them. Let’s take it to the next level!
 
