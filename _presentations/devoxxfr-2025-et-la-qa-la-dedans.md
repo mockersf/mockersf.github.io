@@ -1,7 +1,7 @@
 ---
-name: Déployer un service utilisant du Machine Learning : et la QA là dedans ?
+name: Déployer un service utilisant du Machine Learning - et la QA là dedans ?
 conference: DevoxxFR
-date: "2024-04-19"
+date: "2025-04-18"
 lang: fr
 files:
   - file: "devoxxfr-2025-et-la-qa-la-dedans/Et la QA là dedans.pdf"
