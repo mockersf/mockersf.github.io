@@ -39,3 +39,4 @@ exclude: ["README.md", "Gemfile", "Gemfile.lock"]
 
 collections:
   - presentations
+  - talks
